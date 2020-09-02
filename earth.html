@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            margin-top:160px;
+        }
+        .earth-rotate{
+            margin: 0auto;
+           
+            width: 310px;
+            height: 310px;
+            background-image: url(../img/earth.png);
+            border-radius: 160px;
+            -webkit-animation: run 5s linear 0s infinite;
+        }
+        @-webkit-keyframes run{
+            from{-webkit-animation:rotate(0deg);}
+                to{-webkit-transform: rotate(360deg);
+
+                }
+               
+            
+        } .earth-rotate:hover{
+                    /* 暂停动画的播放 */
+                    -webkit-animation-play-state:paused;
+                }
+    </style>
+</head>
+<body>
+    <div class="earth-rotate"></div>
+</body>
+</html>
